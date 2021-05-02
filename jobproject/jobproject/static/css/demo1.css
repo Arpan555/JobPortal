@@ -1,0 +1,11 @@
+body{
+    color: red;
+    background: url(https://wallpaperplay.com/walls/full/8/0/b/45603.jpg)
+}
+img{
+    height:200px;
+    width:30%;
+    float: left;
+    margin: 1.5%;
+    border: 2px solid yellowgreen;
+}

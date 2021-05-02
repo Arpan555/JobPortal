@@ -1,0 +1,15 @@
+body{
+    background: url(https://images.pexels.com/photos/235986/pexels-photo-235986.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+.container{
+        margin-top: 100px;
+}
+.jumbotron{
+    background: red;
+}
+.jumbotron a{
+    background: yellowgreen;
+    color: solid red;
+    border: 2px solid green;
+
+}

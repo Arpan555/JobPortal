@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<head>
+    <link rel="stylesheet" href="{% static 'css/demo1.css '%}">
+
+    <title>Indore Jobs</title>
+    <body>
+        <h1>Welcome To Indore Job Information</h1>
+        <a href="https://www.facebook.com/CrystalITParkIndore/" ><img src="{% static 'image/it.jpg' %} "></a>
+        <a href="https://en.wikipedia.org/wiki/Rajwada/" ><img src="{% static 'image/rajwada.jpg' %} "></a>
+        <a href="https://en.wikipedia.org/wiki/Indori_Poha/" ><img src="{% static 'image/poha jalebi.jpg' %} "></a><br>
+        {%if job_list%}
+        <table border="2" margin="auto" align="center">
+            <thead>
+                <th>date</th>
+                <th>company</th>
+                <th>title</th>
+                <th>eligibility</th>
+                <th>address</th>
+                <th>email</th>
+                <th>phonenumber</th>
+            </thead>
+            {% for job in job_list %}
+            <tr>
+                <td>{{job.date}}</td>
+                <td>{{job.company}}</td>
+                <td>{{job.title}}</td>
+                <td>{{job.eligibility}}</td>
+                <td>{{job.address}}</td>
+                <td>{{job.email}}</td>
+                <td>{{job.phonenumber}}</td>
+            </tr>
+            {%endfor%}
+        </table>
+        {%else%}
+        <P>No jobs record found</P>
+        {%endif%}
+    </body>
+</head>
